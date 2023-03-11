@@ -26,8 +26,28 @@ h1 {
   border-bottom: 2px solid rgb(175, 172, 172);
 }
 
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-header .accordion-icon-plus {
+  margin-right: 25px;
+  font-size: 30px;
+  display: none;
+}
+
+.accordion-header .accordion-icon-x {
+  margin-right: 25px;
+  font-size: 30px;
+  transform: rotate(-45deg);
+  display: none;
+}
+
 p {
   text-align: left;
+  width: 500px;
 }
 
 img {
@@ -46,4 +66,16 @@ img {
   padding: 20px;
   object-fit: cover;
   padding-bottom: 50px;
+}
+
+.accordion:hover .accordion-icon-plus {
+  display: block;
+}
+
+.accordion-item:hover .accordion-icon-plus {
+  display: none;
+}
+
+.accordion-item:hover .accordion-icon-x {
+  display: block;
 }
