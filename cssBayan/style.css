@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  width: 600px;
+  height: 100vh;
+  margin: 100px auto;
+}
+
+.accordion-item {
+  height: 70px;
+  transition: all 0.5s;
+  border-bottom: 2px solid rgb(175, 172, 172);
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+h1 {
+  text-align: left;
+  padding-bottom: 15px;
+  border-bottom: 2px solid rgb(175, 172, 172);
+}
+
+p {
+  text-align: left;
+}
+
+img {
+  height: 0;
+  overflow: hidden;
+  transition: 500ms all;
+}
+
+.accordion-item:hover {
+  height: 300px;
+  color: rgb(103, 93, 93);
+}
+
+.accordion-item:hover img {
+  height: 100%;
+  padding: 20px;
+  object-fit: cover;
+  padding-bottom: 50px;
+}
