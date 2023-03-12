@@ -119,10 +119,10 @@ img {
   }
 
   .accordion-item:hover img {
-    padding-bottom: 90px;
+    padding-bottom: 70px;
   }
   .accordion-item {
-    height: 100px;
+    height: 80px;
   }
   .accordion-header .accordion-icon-plus {
     font-size: 25px;
